@@ -1,0 +1,22 @@
+.general-container {
+  /* CLEARFIX */
+  content: "";
+  display: table;
+  clear: both;
+
+  .advertisement {
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: end;
+  }
+  
+  .comic-info {
+    float: left;
+    width: 70%;
+  }
+  
+  .comic-cta {
+    float: left;
+    width: 30%;
+  }
+}

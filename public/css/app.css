@@ -53,6 +53,7 @@ img {
 }
 .header-bottom .header-nav-list li {
   border-bottom: 3px solid transparent;
+  margin-left: 1.5rem;
 }
 .header-bottom .header-nav-list li.active {
   border-bottom: 3px solid #0282f9;
@@ -66,25 +67,55 @@ img {
 
 .comics {
   background-color: #000000;
+  position: relative;
+  padding-top: 2rem;
 }
-.comics .general-container {
+.comics .current-series {
+  background-color: #0282f9;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 0.5rem 1.5rem;
+  position: absolute;
+  top: -20px;
+}
+.comics .comics-slide {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
-.comics .general-container .comic-card {
+.comics .comics-slide .comic-card {
   width: 200px;
   margin: 2rem 0;
 }
-.comics .general-container .comic-card .img-wrapper {
+.comics .comics-slide .comic-card .img-wrapper {
   width: 200px;
   height: 200px;
   overflow: hidden;
 }
-.comics .general-container .comic-card .comic-title {
+.comics .comics-slide .comic-card .comic-title {
   color: #ffffff;
   text-transform: uppercase;
   margin-top: 1.5rem;
+}
+
+.general-container {
+  /* CLEARFIX */
+  content: "";
+  display: table;
+  clear: both;
+}
+.general-container .advertisement {
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: end;
+}
+.general-container .comic-info {
+  float: left;
+  width: 70%;
+}
+.general-container .comic-cta {
+  float: left;
+  width: 30%;
 }
 
 /* FOOTER */

@@ -1,7 +1,18 @@
 .comics {
   background-color: $black;
+  position: relative;
+  padding-top: 2rem;
 
-  .general-container {
+  .current-series {
+    background-color: $primary-color;
+    color: $white;
+    text-transform: uppercase;
+    padding: .5rem 1.5rem;
+    position: absolute;
+    top: -20px;
+  }
+
+  .comics-slide {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

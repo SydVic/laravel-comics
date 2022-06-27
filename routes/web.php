@@ -42,6 +42,15 @@ Route::get('/comics', function () use ($data, $comics) {
     return view('comics', $data);
 })->name('comics');
 
+Route::get('/comics/{id}', function ($id) use ($data) {
+    $comic = collect(config('comics'));
+    $current_comic = $comic->where('id', $id)->first();
+    $data = array_merge($data, [
+        'comic' => $current_comic
+    ]);
+    return view('single-comic', $data);
+})->name('single-comic');
+
 Route::get('/characters', function () use ($data) {
     return view('characters', $data);
 })->name('characters');
