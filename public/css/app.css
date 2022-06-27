@@ -51,7 +51,10 @@ img {
 .header-bottom .header-nav-list .dc-logo img {
   height: 80px;
 }
-.header-bottom .header-nav-list .active {
+.header-bottom .header-nav-list li {
+  border-bottom: 3px solid transparent;
+}
+.header-bottom .header-nav-list li.active {
   border-bottom: 3px solid #0282f9;
 }
 
@@ -59,6 +62,29 @@ img {
   background-image: url("../images/jumbotron.jpg");
   background-size: cover;
   height: 400px;
+}
+
+.comics {
+  background-color: #000000;
+}
+.comics .general-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.comics .general-container .comic-card {
+  width: 200px;
+  margin: 2rem 0;
+}
+.comics .general-container .comic-card .img-wrapper {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+}
+.comics .general-container .comic-card .comic-title {
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-top: 1.5rem;
 }
 
 /* FOOTER */

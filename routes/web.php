@@ -29,11 +29,16 @@ $data = [
     'headerMenu' => $headerNavList
 ];
 
+$comics = [
+    'comics' => config('comics')
+];
+
 Route::get('/', function () use ($data) {
     return view('home', $data);
 })->name('home');
 
-Route::get('/comics', function () use ($data) {
+Route::get('/comics', function () use ($data, $comics) {
+    $data = array_merge($data, $comics);
     return view('comics', $data);
 })->name('comics');
 

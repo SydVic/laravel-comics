@@ -26,8 +26,12 @@
       height: 80px;
     }
 
-    .active {
-      border-bottom: 3px solid $primary-color;
+    li{
+      border-bottom: 3px solid transparent;
+
+      &.active {
+        border-bottom: 3px solid $primary-color;
+      }
     }
   }
 }
