@@ -1,0 +1,25 @@
+/* HEADER */
+.header-top {
+  width: 100%;
+  height: $header-top-height;
+  background-color: $primary-color;
+  color: $white;
+  font-size: .8rem;
+
+  .general-container {
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}
+
+.header-nav-list {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+
+  .dc-logo img {
+    height: 80px;
+  }
+}
