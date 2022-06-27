@@ -14,12 +14,20 @@
   }
 }
 
-.header-nav-list {
-  display: flex;
-  align-items: center;
-  text-transform: uppercase;
+.header-bottom {
+  padding: .8rem 0;
 
-  .dc-logo img {
-    height: 80px;
+  .header-nav-list {
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+  
+    .dc-logo img {
+      height: 80px;
+    }
+
+    .active {
+      border-bottom: 3px solid $primary-color;
+    }
   }
 }

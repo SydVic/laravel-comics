@@ -1,4 +1,13 @@
 /* FOOTER */ 
+.footer-top{
+  background-image: url('../images/footer-bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  /* TEST */
+  padding: 10rem 0;
+}
+
 .footer-bottom {
   background-color: $secondary-color;
 }

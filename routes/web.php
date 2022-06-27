@@ -22,19 +22,49 @@ $headerNavList = [
     'videos' => 'videos',
     'fans' => 'fans',
     'news' => 'news',
-    'shop' => 'characters',
+    'shop' => 'shop',
 ];
 
-Route::get('/', function () use ($headerNavList) {
-    $data = [
-        'headerMenu' => $headerNavList
-    ];
-    return view('home', $data);
-});
+$data = [
+    'headerMenu' => $headerNavList
+];
 
-Route::get('/comics', function () use ($headerNavList) {
-    $data = [
-        'headerMenu' => $headerNavList
-    ];
+Route::get('/', function () use ($data) {
+    return view('home', $data);
+})->name('home');
+
+Route::get('/comics', function () use ($data) {
     return view('comics', $data);
-});
+})->name('comics');
+
+Route::get('/characters', function () use ($data) {
+    return view('characters', $data);
+})->name('characters');
+
+Route::get('/movies', function () use ($data) {
+    return view('movies', $data);
+})->name('movies');
+
+Route::get('/tv', function () use ($data) {
+    return view('tv', $data);
+})->name('tv');
+
+Route::get('/collectibles', function () use ($data) {
+    return view('collectibles', $data);
+})->name('collectibles');
+
+Route::get('/videos', function () use ($data) {
+    return view('videos', $data);
+})->name('videos');
+
+Route::get('/fans', function () use ($data) {
+    return view('fans', $data);
+})->name('fans');
+
+Route::get('/news', function () use ($data) {
+    return view('news', $data);
+})->name('news');
+
+Route::get('/shop', function () use ($data) {
+    return view('shop', $data);
+})->name('shop');

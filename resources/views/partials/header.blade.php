@@ -22,7 +22,7 @@
           </a>
         </li>
         @foreach ($headerMenu as $key => $navItem)
-          <li>
+          <li class="{{ Request::route()->getName() === $key ? 'active' : '' }}">
             <a href="/{{ $key }}">
             {{ $navItem }}</a>
           </li>
