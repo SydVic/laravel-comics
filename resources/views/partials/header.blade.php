@@ -18,7 +18,7 @@
       <ul class="header-nav-list">
         <li class= "dc-logo">
           <a href="/">
-            <img src="{{ asset('images/dc-logo.png') }}"" alt="dc comics logo">
+            <img src="{{ asset('images/dc-logo.png') }}" alt="dc comics logo">
           </a>
         </li>
         @foreach ($headerMenu as $key => $navItem)

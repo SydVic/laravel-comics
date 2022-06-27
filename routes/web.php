@@ -45,6 +45,11 @@ Route::get('/comics', function () use ($data, $comics) {
 Route::get('/comics/{id}', function ($id) use ($data) {
     $comic = collect(config('comics'));
     $current_comic = $comic->where('id', $id)->first();
+
+    if (!$current_comic) {
+        return abort(404);
+    }
+
     $data = array_merge($data, [
         'comic' => $current_comic
     ]);

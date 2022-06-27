@@ -33,6 +33,10 @@
       &.active {
         border-bottom: 3px solid $primary-color;
       }
+
+      a {
+        color: $black;
+      }
     }
   }
 }
